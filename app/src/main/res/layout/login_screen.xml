@@ -16,7 +16,9 @@
         android:id="@+id/imageView2"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="41dp" />
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentBottom="false"/>
 
     <ImageView
         android:src="@drawable/blue_padlock"
@@ -49,12 +51,10 @@
         android:text="Login"
         android:id="@+id/button"
         android:layout_below="@+id/input_senha"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/input_senha"
-        android:layout_alignEnd="@+id/input_senha"
+        android:layout_alignParentRight="true"
         android:background="#1976D2"
         android:textStyle="bold"
         android:textColor="#FFFFFF"
