@@ -57,6 +57,7 @@
         android:layout_alignEnd="@+id/input_senha"
         android:background="#1976D2"
         android:textStyle="bold"
+        android:textColor="#FFFFFF"
         android:textAllCaps="true"/>
 
 
