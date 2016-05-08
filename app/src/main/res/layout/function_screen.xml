@@ -4,34 +4,42 @@
     android:layout_height="match_parent">
     
     <Button
-        android:id="@+id/funcao_1"
+        android:id="@+id/user_data"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="10dp"
-        android:text="Função 1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Minhas Informações"
         android:textAllCaps="true"
         android:textStyle="bold"
-        android:background="#ECEFF1"
+        android:background="#2196F3"
         android:layout_weight="1"/>
 
     <Button
-        android:id="@+id/funcao_2"
+        android:id="@+id/request"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="10dp"
-        android:text="Função 2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Solicitar Carona"
         android:textAllCaps="true"
-        android:background="#ECEFF1"
+        android:textStyle="bold"
+        android:background="#2196F3"
         android:layout_weight="1" />
 
     <Button
-        android:id="@+id/funcao_3"
+        android:id="@+id/host"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="10dp"
-        android:text="Função 3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Oferecer Carona"
         android:textAllCaps="true"
-        android:background="#ECEFF1"
+        android:textStyle="bold"
+        android:background="#2196F3"
         android:layout_weight="1" />
 
     <Button
@@ -39,9 +47,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
         android:text="Função 4"
         android:textAllCaps="true"
-        android:background="#ECEFF1"
+        android:textStyle="bold"
+        android:background="#2196F3"
         android:layout_weight="1" />
 
 </LinearLayout>
