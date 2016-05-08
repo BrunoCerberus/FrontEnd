@@ -1,6 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:backgroundTint="#1976D2"
+        android:title="Minhas Informações"
+        android:titleTextColor="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome:"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/input_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="70dp"
+        android:hint="nome"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/lastname_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sobrenome:"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/input_lastname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="70dp"
+        android:hint="sobrenome"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/birthday_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data de Nascimento:"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/input_birthday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="70dp"
+        android:hint="dd/mm/aaaa"
+        android:inputType="date"/>
+
+    <TextView
+        android:id="@+id/sex_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sexo:"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp" />
+
+
+    <RadioButton
+        android:id="@+id/sex_male_radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="M"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="60dp" />
+
+    <RadioButton
+        android:id="@+id/sex_female_radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="F"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="63dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/image_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Imagem:"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/silouhette"
+        android:background="#FFFFFF"
+        android:layout_gravity="center"/>
 </LinearLayout>
