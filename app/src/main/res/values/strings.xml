@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">FrontEnd</string>
+    <string name="version">Versão 1.0</string>
 </resources>
