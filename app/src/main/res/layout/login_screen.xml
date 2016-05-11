@@ -10,57 +10,57 @@
     tools:context="com.example.bruno.frontend.MainActivity">
 
     <ImageView
+        android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/uvv"
-        android:id="@+id/imageView2"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="false"
         android:layout_alignParentLeft="false"
         android:layout_alignParentRight="false"
-        android:layout_alignParentBottom="false"/>
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/uvv"/>
 
     <ImageView
-        android:src="@drawable/blue_padlock"
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:scaleType="center"
-        android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:id="@+id/imageView" />
+        android:layout_centerVertical="true"
+        android:scaleType="center"
+        android:src="@drawable/blue_padlock" />
 
     <EditText
+        android:id="@+id/input_matricula"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/input_matricula"
         android:layout_below="@+id/imageView"
         android:hint="matrícula"
         android:inputType="number"/>
 
     <EditText
+        android:id="@+id/input_senha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/input_senha"
         android:layout_below="@+id/input_matricula"
         android:hint="senha"
         android:inputType="textPassword"/>
 
     <Button
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login"
-        android:id="@+id/button"
-        android:layout_below="@id/input_senha"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@id/input_senha"
         android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
         android:background="#1976D2"
-        android:textStyle="bold"
+        android:text="Login"
+        android:textAllCaps="true"
         android:textColor="#FFFFFF"
-        android:textAllCaps="true"/>
+        android:textStyle="bold"/>
 
 
 </RelativeLayout>

@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/my_toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
+        android:backgroundTint="#1976D2"
         android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        android:backgroundTint="#1976D2"
         android:title="Minhas Informações"
-        android:titleTextColor="#FFFFFF"/>
+        android:titleTextColor="#FFFFFF"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
     <TextView
         android:id="@+id/name_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="Nome:"
-        android:textSize="20dp"
-        android:layout_marginTop="10dp"/>
+        android:textSize="20dp"/>
 
     <EditText
         android:id="@+id/input_name"
@@ -38,9 +38,9 @@
         android:id="@+id/lastname_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="Sobrenome:"
-        android:textSize="20dp"
-        android:layout_marginTop="10dp" />
+        android:textSize="20dp" />
 
     <EditText
         android:id="@+id/input_lastname"
@@ -55,9 +55,9 @@
         android:id="@+id/birthday_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="Data de Nascimento:"
-        android:textSize="20dp"
-        android:layout_marginTop="10dp" />
+        android:textSize="20dp" />
 
     <EditText
         android:id="@+id/input_birthday"
@@ -72,46 +72,46 @@
         android:id="@+id/sex_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="Sexo:"
-        android:textSize="20dp"
-        android:layout_marginTop="10dp" />
+        android:textSize="20dp" />
 
 
     <RadioButton
         android:id="@+id/sex_male_radio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="60dp"
         android:text="M"
         android:textAllCaps="true"
-        android:textStyle="bold"
         android:textSize="20dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginRight="60dp" />
+        android:textStyle="bold" />
 
     <RadioButton
         android:id="@+id/sex_female_radio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="F"
-        android:textAllCaps="true"
-        android:textStyle="bold"
-        android:textSize="20dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginRight="63dp"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        android:text="F"
+        android:textAllCaps="true"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
 
     <TextView
         android:id="@+id/image_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="Imagem:"
-        android:textSize="20dp"
-        android:layout_marginTop="10dp" />
+        android:textSize="20dp" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/silouhette"
+        android:layout_gravity="center"
         android:background="#FFFFFF"
-        android:layout_gravity="center"/>
+        android:src="@drawable/silouhette"/>
 </LinearLayout>
