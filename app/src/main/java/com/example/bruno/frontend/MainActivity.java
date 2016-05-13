@@ -21,18 +21,22 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.function_screen);
     }
 
+    // set the information_screen to the screen
     public void information(View view){
         setContentView(R.layout.information_screen);
     }
 
+    //set the request_screen to the screen
     public void request(View view) {
         setContentView(R.layout.request_screen);
     }
 
+    // set the offer_screen to the screen
     public void host(View view) {
         setContentView(R.layout.offer_screen);
     }
 
+    // there is no screen to oneClick
     public void oneClick(View view) {
         // show a message that will be available soon
         AlertDialog.Builder message = new AlertDialog.Builder(this);
@@ -43,7 +47,20 @@ public class MainActivity extends AppCompatActivity {
         message.create().show();
     }
 
+    //set about_screen to the screen
     public void about(View view) {
         setContentView(R.layout.about_screen);
+
     }
+
+    // this method changes the behavior of the back button when it's pressed
+    // returning to the previous activity
+    @Override
+    public void onBackPressed()
+    {
+        // actually, this just redirect to the function_screen
+        setContentView(R.layout.function_screen);
+    }
+
+
 }

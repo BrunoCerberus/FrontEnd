@@ -13,11 +13,12 @@
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView"
         android:layout_alignParentBottom="false"
         android:layout_alignParentLeft="false"
         android:layout_alignParentRight="false"
-        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:layout_margin="60dp"
         android:src="@drawable/uvv"/>
 
     <ImageView
