@@ -5,18 +5,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/my_toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
-        android:backgroundTint="#1976D2"
-        android:elevation="4dp"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        android:title="Minhas Informações"
-        android:titleTextColor="#FFFFFF"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
-
     <TextView
         android:id="@+id/name_text_view"
         android:layout_width="wrap_content"
@@ -77,28 +65,35 @@
         android:textSize="20dp" />
 
 
-    <RadioButton
-        android:id="@+id/sex_male_radio"
-        android:layout_width="wrap_content"
+    <RadioGroup
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginRight="60dp"
-        android:text="M"
-        android:textAllCaps="true"
-        android:textSize="20dp"
-        android:textStyle="bold" />
+        android:clickable="false">
 
-    <RadioButton
-        android:id="@+id/sex_female_radio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginRight="63dp"
-        android:layout_marginTop="10dp"
-        android:text="F"
-        android:textAllCaps="true"
-        android:textSize="20dp"
-        android:textStyle="bold"/>
+        <RadioButton
+            android:id="@+id/sex_male_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="60dp"
+            android:text="M"
+            android:textAllCaps="true"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/sex_female_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="63dp"
+            android:layout_marginTop="10dp"
+            android:text="F"
+            android:textAllCaps="true"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+    </RadioGroup>
 
     <TextView
         android:id="@+id/image_text_view"

@@ -7,9 +7,9 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"><!-- remove barra de ação -->
 
-        <!-- remove barra de ação -->
+
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait">
@@ -19,7 +19,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".information2_screen"></activity>
     </application>
 
 </manifest>
