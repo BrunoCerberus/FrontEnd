@@ -5,8 +5,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.RadioButton;
+import android.widget.TextView;
+
 import java.lang.String;
 
 import java.util.ArrayList;
@@ -14,6 +17,7 @@ import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity {
 
+    boolean isRequest = false;
 
     // first method opening app
     @Override
@@ -48,6 +52,23 @@ public class MainActivity extends AppCompatActivity {
     public void request(View view) {
 
         setContentView(R.layout.request_screen);
+        TextView warn = (TextView) findViewById(R.id.invisible_text_view);
+        Button request = (Button) findViewById(R.id.request_button);
+        request.setEnabled(false);
+        if (!isRequest) { //false
+            warn.setText("Nenhuma carona foi solicitada até o momento");
+            request.setEnabled(true);
+
+            request.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    setContentView(R.layout.request2_screen);
+
+                }
+            });
+        } else { // true
+            // show the request
+        }
     }
 
     // set the offer_screen to the screen
