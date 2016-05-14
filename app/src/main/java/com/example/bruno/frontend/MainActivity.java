@@ -14,10 +14,16 @@ import java.lang.String;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
 
-    boolean isRequest = false;
+    // some global variables
+    private boolean isRequest = false;
+    private String name;
+    private String lastName;
+    private Date birthDay;
+    private boolean sex;
 
     // first method opening app
     @Override

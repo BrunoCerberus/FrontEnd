@@ -4,12 +4,23 @@
     android:layout_height="match_parent">
 
     <TextView
+        android:id="@+id/my_request_view"
         android:text="Minha Carona:"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-dark"
         android:padding="20dp"
         android:textSize="26sp" />
+
+    <ListView
+        android:layout_below="@+id/my_request_view"
+        android:layout_above="@+id/invisible_text_view"
+        android:id="@+id/listview_from_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:isScrollContainer="true">
+
+    </ListView>
 
     <TextView
         android:id="@+id/invisible_text_view"
